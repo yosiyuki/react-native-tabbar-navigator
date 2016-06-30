@@ -77,6 +77,7 @@ class MainTabBar extends Component {
           key={i}
           title={eachData.title}
           icon={eachData.icon}
+          badge={eachData.badge}
           selectedIcon={eachData.selectedIcon}
           selected={self.state.selectedTab === eachData.id}
           onPress={self.switchTab.bind(self, eachData.id, eachData.title, i)}>
