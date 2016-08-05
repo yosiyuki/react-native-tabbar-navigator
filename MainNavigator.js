@@ -1,8 +1,7 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  Component,
+import React, { Component } from 'react';
+import {
   StyleSheet,
   Text,
   View,
@@ -10,7 +9,7 @@ var {
   TouchableOpacity,
   SegmentedControlIOS,
   Image
-} = React;
+} from 'react-native';
 
 var MainTabBar = require('./MainTabBar');
 
