@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Text,
   View,
-  NavigatorIOS,
+  Navigator,
   TouchableOpacity,
   SegmentedControlIOS,
   Image
@@ -169,13 +169,13 @@ class TabBarNavigator extends Component {
       )
     };
     var navBar = (
-      <NavigatorIOS.NavigationBar
+      <Navigator.NavigationBar
         style={{backgroundColor: this.props.navBarTintColor ? this.props.navBarTintColor : 'rgba(0,0,0,.8)', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#ddd' }}
         routeMapper={this.navRouter}
         />
     );
     return (
-      <NavigatorIOS
+      <Navigator
         ref='navigator'
         style={[style.flexEnabled, {backgroundColor: 'transparent'}]}
         initialRoute={initialRoute}
